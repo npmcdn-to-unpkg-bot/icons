@@ -5,7 +5,7 @@
   "main": "./dist/sprite.js",
   "files": "./dist",
   "scripts": {
-    "clean": "rm -rf ./dist rm -rf ./sprite",
+    "clean": "rm -rf ./dist",
     "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/ -o ./dist/icons",
     "sprite": "svg-sprite -l -D=dist -s --ss=sprite.svg --symbol-dest='' ./src/*.svg",
     "list": "node ./scripts/list.js",
