@@ -10,7 +10,11 @@ fs.readdir(`${rootPath}/src`, (err, files) => {
     const list = files.map((item) => reg.exec(item)[2])
 
     fs.writeFile(`${rootPath}/dist/list.json`, JSON.stringify(list), (errWrite) => {
-      if (errWrite) throw err
+      if (errWrite) {
+        throw err
+      } else {
+        console.log('List created!')
+      }
     })
   }
 })
