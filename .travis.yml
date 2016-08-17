@@ -1,0 +1,18 @@
+sudo: false
+language: node_js
+node_js:
+- stable
+
+script:
+- npm run build
+
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: valentin@kupibilet.ru
+  api_key:
+    secure: sTx08e6yyenDfFHg7XpwWO2+2jTUhDSRMpeZ/c1kZ+sy4afB7TljVF6OwisNKhYOZL9h4pdlcnJwyAiyuZWO/FWqTlToQh9u4aC9QsTYKOs9EysZpv+KL/P5duXTA0AmT7YdD+/6VLXxp2LAtYdh5L7o70HLxYZ9kd+/ALeuIki4Q1FoB4An/+6LXF+dc+FPTPX0ufcouyC/7W4emI789u3p6AxLzA3zuEFGhCwMjCJ48LrPy5L6vXnNxeOnUUUZUpL9+YR0FMZAc2iQduSTPQ5m0buceu7EsNO+loqzkFSwoALzEGoLvbrbb1PbwrLypmmK492dlo6hjxx5KSn29DrXjiINVK25J2FYRSknxTHLZ7f85yEiQDH2o3aiHhQJ8EAxNA+SYfkPdGGSoW/+N+xZvRJPaKBSS0wc6rou43EFQaixdRo5VaELbQs8ZwMK/SchQ4Yh5T/NGUu7PtkfSWoE2nMxk2vkjtd1e/9a8MdFK65gzMTMuTj5aSPe0YGnSwh1d4Fc0mFYSZfsjmhMMoznU25JMz6FghL31vwWbsuYYjOUq5NqvofuLSC5q2cnBzzO58syfDnD1SiV9Dlyvu3G1Q5Q2gL801tV+fBwgj3lTkgdxlxvOL89Se3lRtEIdwE8mZM6nPgLcfAU7gliZ+pBOYDOq5FcwSL8Hz9SzU4=
+  on:
+    branch: master
+    tags: true
+    repo: kupibiletdev/icons

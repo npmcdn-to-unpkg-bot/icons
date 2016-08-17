@@ -1,6 +1,6 @@
 {
   "name": "@kupibilet/icons",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "icons for kupibilet.ru",
   "main": "./dist/sprite.js",
   "files": [
@@ -14,7 +14,9 @@
     "colors": "node ./scripts/colors.js",
     "webpack": "webpack --config webpack-config.js",
     "build": "npm run clean && npm run sprite && npm run list && npm run colors && npm run webpack",
-    "prepublish": "npm run build"
+    "update": "npm version patch",
+    "postupdate": "npm run push",
+    "push": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -27,19 +29,20 @@
   },
   "homepage": "https://github.com/kupibiletdev/icons#readme",
   "devDependencies": {
-    "webpack": "^2.1.0-beta.19",
     "babel": "^6.5.2",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.2",
     "eslint-config-kupibilet": "^4.0.2",
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
+    "husky": "^0.11.6",
     "raw-loader": "^0.5.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "resolve-url": "^0.2.1",
     "svg-sprite": "^1.3.3",
     "svgo": "^0.6.6",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.19"
   }
 }
