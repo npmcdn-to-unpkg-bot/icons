@@ -1,6 +1,6 @@
 {
   "name": "@kupibilet/icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "icons for kupibilet.ru",
   "main": "./dist/sprite.js",
   "files": "./dist",
@@ -38,7 +38,6 @@
     "resolve-url": "^0.2.1",
     "svg-sprite": "^1.3.3",
     "svgo": "^0.6.6",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.19"
+    "url-loader": "^0.5.7"
   }
 }
