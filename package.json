@@ -22,10 +22,8 @@
     "url": "https://github.com/kupibiletdev/icons/issues"
   },
   "homepage": "https://github.com/kupibiletdev/icons#readme",
-  "dependencies": {
-    "webpack": "^2.1.0-beta.19"
-  },
   "devDependencies": {
+    "webpack": "^2.1.0-beta.19",
     "babel": "^6.5.2",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.2",
