@@ -14,8 +14,9 @@
     "colors": "node ./scripts/colors.js",
     "webpack": "webpack --config webpack-config.js",
     "build": "npm run clean && npm run sprite && npm run list && npm run colors && npm run webpack",
-    "prepublish": "npm run build",
-    "prepush": "npm version patch"
+    "update": "npm version patch",
+    "postupdate": "npm run push",
+    "push": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
