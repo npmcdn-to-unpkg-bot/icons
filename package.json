@@ -8,8 +8,9 @@
     "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/ -o ./dist/icons",
     "sprite": "svg-sprite -l -D=dist -s --ss=sprite.svg --symbol-dest='' ./src/*.svg",
     "list": "node ./scripts/list.js",
+    "colors": "node ./scripts/colors.js",
     "webpack": "webpack --config webpack-config.js",
-    "build": "npm run clean && npm run sprite && npm run list && npm run webpack",
+    "build": "npm run clean && npm run sprite && npm run list && npm run colors && npm run webpack",
     "prepublish": "npm run build"
   },
   "repository": {
