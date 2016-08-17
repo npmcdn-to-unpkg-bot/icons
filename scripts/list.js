@@ -9,11 +9,11 @@ fs.readdir(`${rootPath}/src`, (err, files) => {
     const reg = /^(kb-)(.*)(\.svg)$/i
     const list = files.map((item) => reg.exec(item)[2])
 
-    fs.writeFile(`${rootPath}/dist/list.json`, JSON.stringify(list), (errWrite) => {
+    fs.writeFile(`${rootPath}/dist/sprite.json`, JSON.stringify(list), (errWrite) => {
       if (errWrite) {
         throw err
       } else {
-        console.log('List created!')
+        console.log('Names list created!')
       }
     })
   }
