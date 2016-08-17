@@ -1,6 +1,6 @@
 {
   "name": "@kupibilet/icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "icons for kupibilet.ru",
   "main": "./dist/sprite.js",
   "files": [
