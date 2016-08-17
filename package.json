@@ -4,7 +4,7 @@
   "description": "icons for kupibilet.ru",
   "main": "./dist/sprite.js",
   "files": [
-    "./dist"
+    "dist"
   ],
   "scripts": {
     "clean": "rm -rf ./dist",
