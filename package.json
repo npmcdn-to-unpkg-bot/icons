@@ -6,9 +6,10 @@
   "scripts": {
     "clean": "rm -rf ./dist rm -rf ./sprite",
     "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/ -o ./dist/icons",
-    "sprite": "svg-sprite -l -D=./dist/sprite -s --ss=icons.svg --symbol-dest='' ./src/*.svg",
+    "sprite": "svg-sprite -l -D=dist -s --ss=sprite.svg --symbol-dest='' ./src/*.svg",
     "list": "node ./scripts/list.js",
-    "build": "npm run clean && npm run sprite && npm run list",
+    "webpack": "webpack --config webpack-config.js",
+    "build": "npm run clean && npm run sprite && npm run list && npm run webpack",
     "prepublish": "npm run build"
   },
   "repository": {
