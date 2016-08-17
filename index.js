@@ -1,7 +1,7 @@
-(function () {
-  const sprite = require(`raw!./dist/sprite/icons.svg`)
+const sprite = require('./dist/sprite.svg');
 
+(function () {
   if (document.body != null) {
-    document.body.appendChild(sprite)
+    document.body.innerHTML += sprite
   }
 }())
