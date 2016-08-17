@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "icons for kupibilet.ru",
   "main": "./dist/sprite.js",
+  "files": "./dist",
   "scripts": {
     "clean": "rm -rf ./dist rm -rf ./sprite",
     "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/ -o ./dist/icons",
