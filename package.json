@@ -2,7 +2,7 @@
   "name": "@kupibilet/icons",
   "version": "1.0.0",
   "description": "icons for kupibilet.ru",
-  "main": "index.js",
+  "main": "./dist/sprite.js",
   "scripts": {
     "clean": "rm -rf ./dist rm -rf ./sprite",
     "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/ -o ./dist/icons",
