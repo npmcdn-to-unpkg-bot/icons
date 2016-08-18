@@ -8,12 +8,12 @@
   ],
   "scripts": {
     "clean": "rm -rf ./dist",
-    "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/ -o ./dist/icons",
-    "sprite": "svg-sprite -l -D=dist -s --ss=sprite.svg --symbol-dest='' ./src/*.svg",
-    "list": "node ./scripts/list.js",
-    "colors": "node ./scripts/colors.js",
+    "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/icons/ -o ./dist/icons",
+    "sprite": "svg-sprite -l -D=dist -s --ss=sprite.svg --symbol-dest='' ./src/icons/*.svg",
+    "list": "node ./src/scripts/list.js",
+    "colors": "node ./src/scripts/colors.js",
     "webpack": "webpack --config webpack-config.js",
-    "build": "npm run clean && npm run sprite && npm run list && npm run colors && npm run webpack",
+    "build": "npm run clean && npm run sprite && npm run list && npm run colors && npm run webpack && rm -rf ./dist/sprite.svg",
     "update": "npm version patch",
     "postupdate": "npm run push",
     "push": "git push --follow-tags"

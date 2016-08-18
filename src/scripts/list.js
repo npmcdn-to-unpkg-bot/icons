@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const rootPath = process.cwd()
 
-fs.readdir(`${rootPath}/src`, (err, files) => {
+fs.readdir(`${rootPath}/src/icons/`, (err, files) => {
   if (err) throw err
 
   const reg = /^(kb-)(.*)(\.svg)$/i

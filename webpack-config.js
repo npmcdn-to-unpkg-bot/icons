@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const pathJs = path.resolve(__dirname)
+const pathJs = path.resolve(__dirname, 'src')
 const pathBuild = path.resolve(__dirname, 'dist')
 
 module.exports = {

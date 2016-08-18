@@ -1,4 +1,4 @@
-const sprite = require('./dist/sprite.svg');
+const sprite = require('../dist/sprite.svg');
 
 (function () {
   if (document.body != null) {
