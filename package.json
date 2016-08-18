@@ -7,13 +7,13 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rm -rf ./dist",
+    "clean": "rm -rf ./dist ./tmp",
     "svgo": "svgo --enable=removeUselessStrokeAndFill -f ./src/icons/ -o ./dist/icons",
-    "sprite": "svg-sprite -l -D=dist -s --ss=sprite.svg --symbol-dest='' ./src/icons/*.svg",
+    "sprite": "svg-sprite -l -D=tmp -s --ss=sprite.svg --symbol-dest='' ./src/icons/*.svg",
     "list": "node ./src/scripts/list.js",
     "colors": "node ./src/scripts/colors.js",
     "webpack": "webpack --config webpack-config.js",
-    "build": "npm run clean && npm run sprite && npm run list && npm run colors && npm run webpack && rm -rf ./dist/sprite.svg",
+    "build": "npm-run-all clean sprite list colors webpack",
     "update": "npm version patch",
     "postupdate": "npm run push",
     "push": "git push --follow-tags"
@@ -36,6 +36,8 @@
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
     "husky": "^0.11.6",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^3.0.0",
     "raw-loader": "^0.5.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
