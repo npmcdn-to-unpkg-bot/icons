@@ -8,7 +8,7 @@ const Icons = ({ prefix }) =>
     <h2>version: {pkg.version}</h2>
     {list.map((item) =>
       <svg>
-        <use xlinkHref={`#${prefix}-${item}`} key={item} />
+        <use xlinkHref={`#${prefix}_${item}`} key={item} />
       </svg>
     )}
   </div>
