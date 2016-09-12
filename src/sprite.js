@@ -1,9 +1,7 @@
 const sprite = require('../tmp/sprite.svg')
 
-document.addEventListener('DOMContentLoaded', () => {
-  (function () {
-    if (document.body != null) {
-      document.body.innerHTML += sprite
-    }
-  }())
-})
+const appendSprite = (node) => {
+  document.querySelector(node).innerHTML += sprite
+}
+
+export default appendSprite

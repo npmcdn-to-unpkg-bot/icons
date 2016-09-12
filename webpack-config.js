@@ -13,6 +13,8 @@ module.exports = {
   output: {
     path: pathBuild,
     filename: '[name].js',
+    library: '[name]',
+    libraryTarget: 'umd',
   },
   resolve: {
     modulesDirectories: ['node_modules', pathSrc],
